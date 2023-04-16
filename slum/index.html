@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Visakhapatnam Slums</title>
+  <style>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#04AA6D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+  }
+  .headnav {
+    float: left;
+  }
+  .active {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .active:hover{
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }</style>
+</head>
+<body>
+  <ul>
+    <li class="headnav"><a class="active" id="home" href="home.html" target="h" onclick="fun1()">Home</a></li>
+    <li class="headnav"><a class="active" id ="slums" href="slums.html" target="h" onclick="fun2()">Slums</a></li>
+    <li class="headnav"><a class="active" id="about" href="about.html" target="h" onclick="fun3()">About</a></li>
+  </ul>
+	<iframe src="home.html" name="h" width="100%" height="500vh" style="border:none"></iframe>
+
+</body>
+<script>
+  function fun1(){
+    document.getElementById("home").style.backgroundColor="black"
+    document.getElementById("slums").style.backgroundColor="#04AA6D"
+    document.getElementById("about").style.backgroundColor="#04AA6D"
+  }
+  function fun2(){
+    document.getElementById("home").style.backgroundColor="#04AA6D"
+    document.getElementById("slums").style.backgroundColor="black"
+    document.getElementById("about").style.backgroundColor="#04AA6D"
+  }
+  function fun3(){
+    document.getElementById("home").style.backgroundColor="#04AA6D"
+    document.getElementById("slums").style.backgroundColor="#04AA6D"
+    document.getElementById("about").style.backgroundColor="black"
+  }
+</script>
+</html>
